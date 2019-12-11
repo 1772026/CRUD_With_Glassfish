@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://example/" xmlns:tns="http://example/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="sayHelloWorldFrom" type="tns:sayHelloWorldFrom"/>
+
+  <xs:element name="sayHelloWorldFromResponse" type="tns:sayHelloWorldFromResponse"/>
+
+  <xs:element name="sayYourProfile" type="tns:sayYourProfile"/>
+
+  <xs:element name="sayYourProfileResponse" type="tns:sayYourProfileResponse"/>
+
+  <xs:element name="sum" type="tns:sum"/>
+
+  <xs:element name="sumResponse" type="tns:sumResponse"/>
+
+  <xs:complexType name="sum">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:string" minOccurs="0"/>
+      <xs:element name="arg1" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="sumResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="sayHelloWorldFrom">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="sayHelloWorldFromResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="sayYourProfile">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="sayYourProfileResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+
